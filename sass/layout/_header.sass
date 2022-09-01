@@ -1,0 +1,42 @@
+.header
+    &__container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__logo
+        margin-top: 1.4rem
+    &__nav
+        list-style-type: none
+        margin-top: 4.6rem
+    &__item
+        display: inline-block
+        font-size: 1.6rem
+        font-weight: 500
+        line-height: 2.2rem
+        margin-right: 4.5rem
+        transition: all .2s
+        &:last-child
+            margin-right: 0
+        &:hover
+            transform: translateY(-0.5rem) scale(1.05)
+    &__link
+        text-decoration: none
+        color: black
+        &:hover
+            color: #FF3DEC
+    &__info
+        margin-top: 4.6rem
+    &__text
+        font-size: 1.6rem
+        font-weight: 700
+        line-height: 2.2rem
+        color: black
+        margin-bottom: 1.3rem
+    &__icons
+        text-align: center
+    &__icon
+        margin-right: 2.5rem
+        &:hover
+            opacity: 0.8
+        &:last-child
+            margin-right: 0

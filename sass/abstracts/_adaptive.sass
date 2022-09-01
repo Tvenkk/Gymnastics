@@ -1,0 +1,319 @@
+@media (max-width: 1200px)
+    .container
+        width: 960px
+    html
+        font-size: 54%
+
+    .ellipse-blur-blue
+        right: -35rem
+
+    .title-main:hover
+        transform: skewY(1deg) skewX(10deg) scale(1.02)
+
+// Конец первых медиаправил
+
+@media (max-width: 991px)
+    .container
+        width: 720px
+    html
+        font-size: 43%
+    .header
+        &__logo
+            width: 20rem
+
+    .section-price
+        padding-top: 10rem
+
+    .timetable-box 
+        margin-bottom: 10rem
+
+    .info-block
+        max-width: 50rem
+        &__title
+            font-size: 3.9rem
+            margin-bottom: 4rem
+        &__name
+            font-size: 2rem
+        &__job
+            font-size: 1.9rem
+
+    .middle-ellipse
+        top: 0rem
+        &_2
+            display: none
+
+    .big-ellipse
+        &_4
+            top: 9rem
+            left: 75rem
+
+    .ellipse-blur-blue
+        display: none
+
+    .bg
+        left: 10rem
+
+// Конец вторых медиаправил
+
+@media (max-width: 767px)
+    .container
+        width: 540px
+    html
+        font-size: 56%
+
+    .section-price 
+        padding-top: 5rem
+
+    .timetable-box
+        margin-bottom: 6rem
+
+    .section-about
+        clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%)
+        background: radial-gradient(#E8B4E2 36.78%, #7775E7 100%)
+        &__container
+            justify-content: center
+            align-items: flex-start
+        &__img
+            height: 53rem
+            width: 42rem
+            top: 77%
+            left: 65%
+            transform: translate(-50%, -50%)
+            clip-path: circle(40.1% at 46% 43%)
+
+    .info-block
+        padding-top: 10rem
+
+    .header
+        &__container
+            display: block
+        &__logo
+            width: 16rem
+        &__nav
+            display: none
+        &__info
+            display: none
+
+    .small-ellipse
+        top: 13rem
+        right: 9rem
+
+    .middle-ellipse
+        top: 64rem
+        left: 54rem
+
+    .big-ellipse_4
+        left: 51rem
+        top: 29rem
+
+    .ellipse
+        top: 32rem
+
+    .bg
+        left: 7rem
+        height: 48rem
+        width: 42rem
+
+    .navigation
+        display: contents
+        &__toggle
+            display: none
+        &__button
+            background: white
+            height: 9rem
+            width: 9rem
+            border-radius: 50%
+            position: fixed
+            right: 2rem
+            top: 2rem
+            z-index: 200
+            text-align: center
+            cursor: pointer
+            box-shadow: (0px 2px 2px grey)
+        &__background
+            height: 7rem
+            width: 7rem
+            border-radius: 50%
+            background: #FFBCFD
+            position: fixed
+            right: 3rem
+            top: 4rem
+            z-index: 100
+            transition: all .6s
+        &__nav
+            height: 100vh
+            position: fixed
+            top: 0
+            right: 0
+            z-index: 150
+            opacity: 0
+            width: 0
+            transition: all .4s
+            right: -17rem
+        &__list
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            list-style: none
+        &__item
+            text-align: center
+            margin-bottom: 4rem
+        &__link
+            font-size: 4rem
+            color: white
+            text-decoration: none
+            text-transform: uppercase
+            letter-spacing: .5rem
+            display: inline-block
+            transition: all .3s
+            &:hover, &:active
+                transform: translateX(1rem)
+                color: #FF3DEC
+
+        &__toggle:checked ~ &__background
+            transform: scale(80)
+        &__toggle:checked ~ &__nav
+            right: 0
+            opacity: 1
+            width: 100%
+        &__icon
+            position: relative
+            margin-top: 38px
+            &,
+            &::before,
+            &::after
+                width: 30px
+                height: 2px
+                background: black
+                display: inline-block
+            &::before,
+            &::after
+                content: ""
+                position: absolute
+                left: 0
+                transition: all .2s
+            &::before
+                top: -10px
+            &::after
+                top: 10px
+
+        &__toggle:checked + &__button &__icon
+            background: transparent
+        &__toggle:checked + &__button &__icon::before
+            top: 0
+            transform: rotate(135deg)
+        &__toggle:checked + &__button &__icon::after
+            top: 0
+            transform: rotate(-135deg)
+            
+// Конец третьих медиаправил
+
+@media (max-width: 575px)
+    .container
+        width: 95%
+    html
+        font-size: 60%
+    .header
+        &__logo
+            width: 14rem
+
+    .section-price
+        padding-top: 6rem
+
+    .title-box
+        margin-bottom: 5.7rem
+
+    .title-main
+        font-size: 3.2rem
+
+    .title-secondary
+        font-size: 2.8rem
+        &__timetable
+            margin-bottom: 3.5rem
+
+    .price-box
+        flex-direction: column
+        align-items: center
+        margin-bottom: 4.5rem
+
+    .section-about
+        &__img
+            height: 44rem
+            width: 34rem
+            top: 85%
+            left: 54%
+
+    .card
+        height: 33rem
+        width: 30rem
+        &__first
+            margin-bottom: 3rem
+        &__img
+            height: 6rem
+            width: 6rem
+        &__title
+            font-size: 2.5rem
+            margin-bottom: 1rem
+        &__price
+            font-size: 4rem
+
+    .btn
+        height: 6.5rem
+        width: 21.5rem
+        font-size: 1.6rem
+        padding: 2.2rem 3.2rem
+
+    td
+        font-size: 1.7rem
+
+    .info-block
+        max-width: 25rem
+        &__title
+            font-size: 3rem
+            margin-bottom: 2rem
+        &__text
+            font-size: 2.1rem
+            margin-bottom: 2rem
+        &__name
+            font-size: 1.6rem
+        &__job
+            font-size: 1.5rem
+            margin-bottom: 4.2rem
+
+    .footer
+        &__container
+            justify-content: space-evenly
+        &__title
+            display: none
+
+    .small-ellipse
+        top: 13rem
+        right: 8rem
+
+    .middle-ellipse
+        display: none
+
+    .big-ellipse
+        &_3
+            top: 129rem
+        &_4
+            display: none
+
+    .ellipse-blur-pink
+        display: none
+
+    .bg
+        display: none
+
+    .navigation
+        &__button
+            height: 8rem
+            width: 8rem
+        &__background
+            height: 6rem
+            width: 6rem
+        &__link
+            font-size: 3.3rem
+
+// Конец четвёртых медиаправил
